@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+}
+
+header{
+    background: url(top-background.JPG);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-header{
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    color: 	#fde5c8;
+    font-size: 3em;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 30px;
+    transition: all 1s;
+    animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 50px;
+        width: 100%;
+      }
+}
+
+header img{
+   width:400px;
+   margin: auto;
+   transition: all 1s ease-in-out;
+}
+
+
+header img:hover{
+    width: 450px;     
+}
+
+.title-header:hover{
+    margin-left: 60px;
+    font-size: 3.3em;
+    transition: all 1s;
+}
+
+.container-header span{
+    color: #98daf4;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    width: 100%;
+    height: 300vh;
+    background: url(section.jpg) center;
+    background-size: cover; 
+}
+/* ****************************FirstPart******************* */
+.container-1{
+    width: 100%;
+    height: 100vh;   
+}
+.about{
+    width: 46%;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.about-title{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(156, 148, 148);
+}
+
+.about-line{
+    width: 100px;
+    margin: auto;
+}
+
+.about-text{
+    margin-top: 25px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #45bbff;
+    text-align: center;
+
+}
+
+.container-1 button{
+    font-size: 3em;
+    color: rgb(29, 57, 94);
+    padding: 10px 15px 10px 15px;
+    border-radius: 100px;
+    background-image: linear-gradient(to bottom, rgb(156, 148, 148), orange);
+    border: none;
+    float: right;
+    margin-right: 270px;
+    transition: 1s;
+        
+}
+      
+.container-1 button:hover {
+    background-image: linear-gradient(to bottom, orange, rgb(156, 148, 148));
+    font-size: 3.2em;
+    transition: 1s;
+      }
+
+
+/* *********************SecondPart****************************** */
+
+.container-2{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+      
+}
+.why{
+    width: 45%;
+    float: right;
+    margin-right: 170px;
+}
+
+.why-title{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #45bbff;
+}
+
+.why-line{
+    width: 250px;
+    margin-left: 110px;   
+}
+
+.why-text{
+    margin-top: 25px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(156, 148, 148);
+    text-align: center;
+
+}
+
+.container-2 button{
+    font-size: 3em;
+    color: rgb(29, 57, 94);
+    padding: 10px 15px 10px 15px;
+    border-radius: 100px;
+    background-image: linear-gradient(to bottom, rgb(156, 148, 148), orange);
+    border: none;
+    transition: 1s;
+    margin-top: 300px;
+    margin-left: 170px;
+        
+}
+      
+.container-2 button:hover {
+    background-image: linear-gradient(to bottom, orange, rgb(156, 148, 148));
+    font-size: 3.2em;
+    transition: 1s;
+      }
+
+/* **************************ThirdPart****************** */
+.container-3{
+    height: 100vh;
+}
+.skills{
+    width: 500px;
+    margin: 60px auto;
+    list-style: none;
+    margin-top: 130px;
+}
+.skills-title{
+    color: orange;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+}
+.skills li{
+    margin: 20px 0;
+    
+}
+.skills h3{
+    color: rgb(156, 148, 148);
+    text-shadow: -2px 2px 2px rgba(0,0,0,0.51);
+}
+
+.bar{
+    background: white;
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #0c405e;
+    margin-top: 5px;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background: #146ca0;
+}
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+
+.css{
+    width: 85%;
+    animation: css 2s;
+}
+
+.thinking{
+    width: 80%;
+    animation: thinking 2s;
+}
+
+.Creativity{
+    width: 80%;
+    animation: creativity 2s;
+}
+
+.Responsive{
+    width: 65%;
+    animation: responsive 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes thinking{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes creativity{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes responsive{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+/* ********************FOOTER**************************** */
+footer{
+    background: url(top-background.JPG) ;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.footer-top{
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.footer-middle{
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer-bottom-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    font-size: 1.3em;
+
+}
+
+.linkedin{
+    transition: 0.5s;
+}
+.linkedin:hover{
+    transition: 0.5s;
+  text-shadow: -5px 4px 10px rgba(0,0,0,0.66);
+  font-size: 1.5em;
+}
+
+.facebook{
+    transition: 0.5s;
+}
+.facebook:hover{
+    transition: 0.5s;
+    text-shadow: -5px 4px 10px rgba(0,0,0,0.66);
+  font-size: 1.5em;
+}
+
+.instagram{
+    transition: 0.5s;
+}
+.instagram:hover{
+    transition: 0.5s;
+    text-shadow: -5px 4px 10px rgba(0,0,0,0.66);
+  font-size: 1.5em;
+}
+
+/* **************************RESPONSIVE********************* */
+
+
+@media screen and (max-width:1600px){
+    .title-header{
+        font-size: 4em;
+    }
+    .title-header:hover{
+        font-size: 4.3em;
+    }
+    
+    header img{
+        width: 500px;
+    }
+    header img:hover{
+        width: 550px;
+    }
+    .about{
+        width: 55%;
+    }
+    
+    .about-title{
+        font-size: 50px;
+    }
+    
+    .about-line{
+        width: 130px;
+    }
+    
+    .about-text{
+        margin-top: 40px;
+        font-size: 1.6em;
+    }
+    .why{
+        width: 55%;
+    }
+    
+    .why-title{
+        font-size: 50px;
+    }
+    
+    .why-line{
+        width: 250px;
+        margin-left: 200px;   
+    }
+    
+    .why-text{
+        margin-top: 40px;
+        font-size: 1.6em;
+    }
+    .skills{
+        width: 700px;
+    }
+    .skills-title{
+        font-size: 50px;
+    }
+    .skills li{
+        margin: 40px 0;
+        
+    }
+    .skills h3{
+        font-size: 30px;
+    }
+    .footer-top{
+        font-size: 45px;
+    }
+    
+    .footer-middle{
+        font-size: 25px;
+    }
+    .footer-bottom-logo{
+        width: 130px;
+        font-size: 1.7em;
+    }
+}
+
+    @media screen and (max-width:1400px){
+        .title-header{
+            font-size: 3.7em;
+        }
+
+        .title-header:hover{
+            font-size: 4em;
+        }
+        
+        .about{
+            width: 53%;
+        }
+        
+        .about-title{
+            font-size: 48px;
+        }
+        
+        .about-text{
+            font-size: 1.5em;
+        }
+
+        .why{
+            width: 53%;
+        }
+        
+        .why-title{
+            font-size: 48px;
+        }
+        
+        .why-text{
+            font-size: 1.5em;
+        }
+        .skills{
+            width: 650px;
+            margin-top: 30px;
+        }
+        .skills-title{
+            font-size: 48px;
+        }
+        .skills li{
+            margin: 37px 0;
+            
+        }
+        .skills h3{
+            font-size: 25px;
+        }
+        .footer-top{
+            font-size: 42px;
+        }
+        
+        .footer-middle{
+            font-size: 23px;
+        }
+        .footer-bottom-logo{
+            width: 120px;
+            font-size: 1.6em;
+        }
+}
+
+@media screen and (max-width:1200px){
+    .title-header{
+        font-size: 3.4em;
+    }
+    .title-header:hover{
+        font-size: 3.7em;
+    }
+    
+    header img{
+        width: 450px;
+    }
+    header img:hover{
+        width: 500px;
+    }
+    .about{
+        width: 53%;
+    }
+    
+    .about-title{
+        font-size: 45px;
+    }
+    
+    .about-text{
+        font-size: 1.4em;
+    }
+
+    .why{
+        width: 53%;
+    }
+    
+    .why-title{
+        font-size: 45px;
+    }
+    
+    .why-text{
+        font-size: 1.4em;
+    }
+
+    .skills{
+        width: 600px;
+    }
+    .skills-title{
+        font-size: 45px;
+    }
+    .skills li{
+        margin: 34px 0;
+        
+    }
+    .skills h3{
+        font-size: 22px;
+    }
+    .footer-top{
+        font-size: 39px;
+    }
+    
+    .footer-middle{
+        font-size: 21px;
+    }
+    .footer-bottom-logo{
+        width: 110px;
+        font-size: 1.65em;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .title-header{
+        font-size: 3.2em;
+    }
+    .title-header:hover{
+        font-size: 3.5em;
+    }
+    
+    header img{
+        width: 420px;
+    }
+    header img:hover{
+        width: 470px;
+    }
+    .about{
+        width: 53%;
+    }
+    
+    .about-title{
+        font-size: 42px;
+    }
+    
+    .about-text{
+        font-size: 1.3em;
+    }
+
+    .why{
+        width: 53%;
+    }
+    
+    .why-title{
+        font-size: 42px;
+    }
+    
+    .why-text{
+        font-size: 1.3em;
+    }
+
+    .skills{
+        width: 600px;
+    }
+    .skills-title{
+        font-size: 42px;
+    }
+    .skills li{
+        margin: 32px 0;
+        
+    }
+    .skills h3{
+        font-size: 21px;
+    }
+    .footer-top{
+        font-size: 37px;
+    }
+    
+    .footer-middle{
+        font-size: 20px;
+    }
+    .footer-bottom-logo{
+        width: 110px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .title-header{
+        font-size: 2.9em;
+    }
+    .title-header:hover{
+        font-size: 3.2em;
+    }
+    
+    header img{
+        width: 390px;
+    }
+    header img:hover{
+        width: 420px;
+    }
+    .about{
+        width: 50%;
+    }
+    
+    .about-title{
+        font-size: 40px;
+    }
+    
+    .about-text{
+        font-size: 1.2em;
+    }
+    .container-1 button{
+        font-size: 2.6em;  
+        margin-right: 200px;          
+    }
+          
+    .container-1 button:hover {
+        font-size: 2.8em;
+       }
+
+    .why{
+        width: 50%;
+    }
+    
+    .why-title{
+        font-size: 40px;
+    }
+
+    .why-line{
+        margin-left: 100px;
+    }
+    
+    .why-text{
+        font-size: 1.2em;
+    }
+    .container-2 button{
+        font-size: 2.6em;  
+        margin-top: 250px;        
+    }
+          
+    .container-2 button:hover {
+        font-size: 2.8em;
+       }
+
+    .skills{
+        width: 600px;
+    }
+    .skills-title{
+        font-size: 40px;
+    }
+    .skills li{
+        margin: 26px 0;
+        
+    }
+    .skills h3{
+        font-size: 21px;
+    }
+    .footer-top{
+        font-size: 34px;
+    }
+    
+    .footer-middle{
+        font-size: 18px;
+    }
+    .footer-bottom-logo{
+        width: 100px;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width:900px){
+    .title-header{
+        font-size: 2.7em;
+    }
+    .title-header:hover{
+        font-size: 3.1em;
+    }
+    
+    header img{
+        width: 360px;
+    }
+    header img:hover{
+        width: 390px;
+    }
+    .about{
+        width: 53%;
+    }
+    
+    .about-title{
+        font-size: 37px;
+    }
+    
+    .about-text{
+        font-size: 1.1em;
+    }
+
+    .why{
+        width: 55%;
+    }
+    
+    .why-title{
+        font-size: 37px;
+    }
+
+    .why-text{
+        font-size: 1.1em;
+    }
+    .container-2 button{
+ 
+        margin-top: 50px;        
+    }
+
+    .skills{
+        width: 500px;
+    }
+    .skills-title{
+        font-size: 37px;
+    }
+    .skills li{
+        margin: 23px 0;
+        
+    }
+    .skills h3{
+        font-size: 18px;
+    }
+    .footer-top{
+        font-size: 31px;
+    }
+    
+    .footer-middle{
+        font-size: 16px;
+    }
+    .footer-bottom-logo{
+        width: 100px;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:700px){
+    .title-header{
+        font-size: 2.2em;
+    }
+    .title-header:hover{
+        font-size: 2.7em;
+    }
+    
+    header img{
+        width: 300px;
+        margin-top: 30px;
+    }
+    header img:hover{
+        width: 350px;
+    }
+    .about{
+        width: 55%;
+    }
+    
+    .about-title{
+        font-size: 34px;
+    }
+    
+    .about-text{
+        font-size: 1.1em;
+    }
+
+    .container-1 button{
+        font-size: 2.4em;
+        margin-right: 80px;
+    }
+
+    .container-1 button:hover{
+        font-size: 2.6em;
+    }
+
+    .why{
+        width: 55%;
+    }
+    
+    .why-title{
+        font-size: 34px;
+    }
+
+    .why-text{
+        font-size: 1.1em;
+    }
+
+    .container-2 button{
+        font-size: 2.4em;
+        margin-top: 40px;   
+        margin-left: 100px;     
+    }
+
+    .container-2 button:hover{
+        font-size: 2.6em;
+    }
+
+    .skills{
+        width: 450px;
+    }
+    .skills-title{
+        font-size: 34px;
+    }
+    .skills li{
+        margin: 20px 0;
+        
+    }
+    .skills h3{
+        font-size: 17px;
+    }
+    .footer-top{
+        font-size: 29px;
+    }
+    
+    .footer-middle{
+        font-size: 15px;
+    }
+    .footer-bottom-logo{
+        width: 100px;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width:600px){
+    .title-header{
+        font-size: 2.1em;
+    }
+    .title-header:hover{
+        font-size: 2.6em;
+    }
+    
+    header img{
+        width: 290px;
+        margin-top: 30px;
+    }
+    header img:hover{
+        width: 340px;
+    }
+    .about{
+        width: 55%;
+        margin: 100px auto;
+    }
+
+    .container-1 button{
+       display: none;
+    }
+
+    .why{
+        width: 55%;
+        float: none;
+        margin: auto;
+        
+    }
+    .why-line{
+        margin: auto;
+        width: 180px;
+    }
+
+    .container-2 button{
+        display: none;    
+    }
+
+    .skills{
+        width: 400px;
+    }
+    .skills li{
+        margin: 18px 0;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .skills{
+        width: 350px;
+    }
+    .skills h3{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .title-header{
+        font-size: 1.9em;
+    }
+    .title-header:hover{
+        font-size: 2.1em;
+    }
+    
+    header img{
+        width: 250px;
+        margin-top: 30px;
+    }
+    header img:hover{
+        width: 290px;
+    }
+
+    .why-line{
+        margin: auto;
+        width: 150px;
+    }
+
+    .skills{
+        width: 300px;
+    }
+
+    .skills-title{
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:350px){
+    .title-header{
+        font-size: 1.6em;
+    }
+
+    .title-header:hover{
+        font-size: 1.8em;
+    }
+
+    .about-title{
+        font-size: 30px;
+    }
+
+    .why-title{
+        font-size: 30px;
+    }
+
+    .why-line{
+        width: 100px;
+    }
+
+    .skills-title{
+        font-size: 30px;
+    }
+
+    .skills{
+        width: 250px;
+    }
+}
+
+
